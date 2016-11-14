@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    function durchschnitt(zahl1, zahl2) {
+      if (!zahl1 && !zahl1 !== 0) return NaN;
+      var summe = zahl1;
+      var zaehler = 1;
+      if (zahl2 || zahl2 === 0){
+        summe += zahl2 ;
+        zaehler++;
+      }
+        return summe / zaehler;}
+  </script>
+  Durchschnitt von 3, und 4 = <script>document.write(durchschnitt(3, 4));</script>
+  </body>
+</html>

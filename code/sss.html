@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ssskrrt</title>
+  </head>
+  <body>
+    <div id="wrapper">
+    <style media="screen">
+    #wrapper {
+      max-width: 1500px;
+      margin: 0px auto;
+    }
+
+    body {
+      color: #E91E63;
+      background-color: #E0E0E0;
+      font-size: 3em;
+    }
+    .p1 {
+      color: #E91E63;
+    }
+    .p2 {
+      color: #9C27B0;
+    }
+    a {
+      display: block;
+      color: blue;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: transform 0.1s linear;
+  }
+
+    a:hover:not(.active) {
+      background-color: #BDBDBD;
+  }
+  header {
+    text-align: center;
+  }
+    </style>
+    <script type="text/javascript">
+    function durchQuersummeTeilbareZahlen(zahl1, zahl2) {
+        var summe = 0;
+        var segs = (zahl+'').split('');
+        for (var i=0; i<segs.length; i++)
+               summe += parseInt(segs[i]);
+        return summe;
+    }
+      </script>
+      <header>
+        <img class="googlebild" src="featured.png" alt="höhöhö" />
+      </header>
+      <a href="http://www.theuselessweb.com/">Drück druf :)</a>
+      <p class="p1">
+      Die Quersumme der Zahl 33 ist <script>document.write(durchQuersummeTeilbareZahlen(33));</script>.
+      </p>
+      <br>Zahl
+      <br>höhöhö
+      <br>ish toll oder?
+      <br>han mir voll mühe gäh ^^
+
+      </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ggg</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    function zahler(str) {
+      var anz = 0;
+
+      for (var i = 0; i < str.length; i++) {
+      if (str.toLowerCase().charAt(i)=="a" || str.toLowerCase().charAt(i)=="e" ||
+          str.toLowerCase().charAt(i)=="i" || str.toLowerCase().charAt(i)=="o" ||
+          str.toLowerCase().charAt(i)=="u") {
+              ++anz;
+          }
+    }
+    return(anz);
+}
+
+document.write(zahler("aeiou"));
+    </script>
+  </body>
+</html>
