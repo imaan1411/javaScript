@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="myDiv" style="height:300px;width:300px;background-color: #E91E63;"></div>
+    <script>
+    document.getElementById("myDiv").addEventListener("click",sayHello);
+      function sayHello() {
+        alert("Hello World!");
+      }
+      document.addEventListener("wheel",scroll);
+      function scroll() {
+        alert("Mouse wheel has been rotated!");
+      }
+    </script>
+  </body>
+</html>

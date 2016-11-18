@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>sort</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function verbindeStrings (string){
+        var string = "Hallo";
+        var ergebnis = "";
+        for (var i = 0; i < string.length; i++) {
+          if  (i){
+            ergebnis += ",";
+          }
+          ergebnis += string [i];
+        }
+        return ergebnis;
+            }
+      document.write(verbindeStrings());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tannenbaum</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    function zeichneTannenbaum(kronenHohe, stammHohe, stammBreite, zTanne)
+{
+var result = "<p>";
+var space;
+
+for (var i = 1; i <= kronenHohe; i++)
+{
+   space = kronenHohe - i;
+   result += "&nbsp;".repeat(space);
+   result += zTanne.repeat(i);
+   result += "<br/>";
+}
+ for (var o = 1; o <= stammHohe; o++)
+ {
+     for (var p = 1; p <= stammBreite; p++)
+     {
+         space = kronenHohe - stammBreite;
+     }
+     result += "&nbsp;".repeat(space);
+     result += zTanne.repeat(p - 1);
+     result += "<br/>"
+ }
+ result += "</p>";
+ return result;
+}
+document.write(zeichneTannenbaum(15, 6, 4, "+"));
+
+    </script>
+  </body>
+</html>
